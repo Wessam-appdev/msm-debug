@@ -1,8 +1,8 @@
 <h1>
-  Director #<%= @director.id %> details
+  Director #<%= @this_director.id %> details
 </h1>
 
-<a href="/directors/<%= @director.id %>/edit">
+<a href="/directors/<%= @this_director.id %>/edit">
   Edit director
 </a>
 
@@ -13,33 +13,33 @@
     Dob
   </dt>
   <dd>
-    <%= @director.dob %>
+    <%= @this_director.dob %>
   </dd>
 
   <dt>
     Name
   </dt>
   <dd>
-    <%= @director.name %>
+    <%= @this_director.name %>
   </dd>
 
   <dt>
     Bio
   </dt>
   <dd>
-    <%= @director.bio %>
+    <%= @this_director.bio %>
   </dd>
 
   <dt>
     Image
   </dt>
   <dd>
-    <img src="<%= @director.image_url %>" width="320">
+    <img src="<%= @this_director.image_url %>" width="320">
   </dd>
 
 </dl>
 
-<a href="/delete_director/<%= @director.id %>" class="btn btn-danger">
+<a href="/delete_director/<%= @this_director.id %>" class="btn btn-danger">
   Delete director
 </a>
 

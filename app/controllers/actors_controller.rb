@@ -48,6 +48,6 @@ class ActorsController < ApplicationController
 
     @actor.destroy
 
-    redirect_to("/actors", :notice => "Actor deleted successfully.)
+    redirect_to("/actors", :notice => "Actor deleted successfully.")
   end
 end
